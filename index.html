@@ -39,30 +39,30 @@
     <section id="ticket" class="ticket-section">
       <div>
         <p class="section-kicker">Reserve your place</p>
-        <h2>Download your free digital ticket</h2>
-        <p>Enter a name for the ticket, then save it to your phone. You can show the ticket at the entrance.</p>
+        <h2>Download your official free concert ticket</h2>
+        <p>Enter your name and download a polished, poster-style ticket image to keep on your phone.</p>
       </div>
 
       <form id="ticket-form" class="ticket-form">
         <label for="ticket-name">Name on ticket</label>
         <input id="ticket-name" name="ticket-name" type="text" maxlength="40" placeholder="Your name" required>
-        <button class="button primary" type="submit">Create my free ticket</button>
+        <button class="button primary" type="submit">Create my official ticket</button>
       </form>
 
       <div id="ticket-result" class="ticket-result" hidden>
         <canvas id="ticket-canvas" width="1200" height="700" aria-label="Digital concert ticket"></canvas>
         <div class="ticket-actions">
-          <button class="button primary" id="download-ticket" type="button">Download ticket</button>
+          <button class="button primary" id="download-ticket" type="button">Download ticket image</button>
           <button class="button secondary" id="share-ticket" type="button">Share ticket</button>
         </div>
-        <p class="ticket-note">Keep this image on your phone. Admission remains free.</p>
+        <p class="ticket-note">This ticket is a keepsake and event pass. Admission remains free and no entrance scanning is required.</p>
       </div>
     </section>
 
     <section id="details" class="details-grid">
       <article class="card"><span class="icon">🎟️</span><h2>Free entry</h2><p>Everyone is welcome.</p></article>
       <article class="card"><span class="icon">📅</span><h2>8 August 2026</h2><p>Starts at <strong>14:00</strong>.</p></article>
-      <article class="card"><span class="icon">📍</span><h2>Show Grounds Main Arena</h2><p>Lusaka, Zambia</p></article>
+      <article class="card"><span class="icon">📍</span><h2>Main Arena</h2><p>Agricultural &amp; Commercial Showgrounds<br>Plot No. 2374, Great East Road<br>Lusaka, Zambia</p></article>
       <article class="card"><span class="icon">🎤</span><h2>Renowned artists</h2><p>Music, worship, peace and unity.</p></article>
     </section>
 
@@ -72,7 +72,7 @@
         <h2>Ephraim — Son of Africa</h2>
         <p>Join families, young people and music lovers from across Zambia for a joyful, faith-filled celebration.</p>
         <div class="share-row">
-          <a class="button primary" href="https://www.openstreetmap.org/search?query=Show%20Grounds%20Main%20Arena%20Lusaka%20Zambia" target="_blank" rel="noopener">Get directions</a>
+          <a class="button primary" href="https://www.google.com/maps/search/?api=1&query=Main+Arena%2C+Agricultural+and+Commercial+Showgrounds%2C+Plot+2374%2C+Great+East+Road%2C+Lusaka%2C+Zambia" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
           <button class="button secondary" id="share-button" type="button">Share event</button>
           <a class="button secondary" id="calendar-link" href="#">Add to calendar</a>
         </div>

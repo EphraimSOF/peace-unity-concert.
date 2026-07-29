@@ -1,25 +1,19 @@
-# Peace and Unity Concert Website — Digital Ticket Edition
+# Peace and Unity Concert Website — Official Downloadable Ticket
 
-This version includes:
-- Mobile concert webpage
-- Countdown
-- Event details
-- Directions
-- Sharing
-- Add-to-calendar
-- A downloadable digital ticket with a ticket number
+This edition creates a tall, polished ticket image styled from the concert poster.
 
-## Important limitation
+Visitors can:
+- Enter their name
+- Generate an official-looking digital ticket
+- Download the ticket as a PNG image
+- Share the ticket from a supported phone
 
-This GitHub Pages version generates the ticket directly on each visitor's phone. It does **not** maintain a secure central list of claimed tickets or prevent someone from creating another ticket on another device.
+Important:
+- Admission is free.
+- The ticket is not scanned or validated at the entrance.
+- Bitly can still track visits to the website.
 
-Bitly will still count visits/scans to the page.
-
-To centrally count ticket claims and validate tickets at the entrance, the next upgrade requires a small online database/backend such as Supabase or Cloudflare D1.
-
-## Upload to GitHub
-
-Upload all of these files to the repository root:
+Upload these files to the root of your GitHub repository:
 - index.html
 - styles.css
 - script.js
@@ -27,3 +21,12 @@ Upload all of these files to the repository root:
 
 Then enable GitHub Pages:
 Settings → Pages → Deploy from a branch → main → /(root)
+
+
+## Directions fix
+
+The venue button now opens Google Maps using the full address:
+
+Main Arena, Agricultural & Commercial Showgrounds  
+Plot No. 2374, Great East Road  
+Lusaka, Zambia
