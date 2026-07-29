@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Peace and Unity Concert presented by Ephraim Music Promotions. Free entry, 8 August 2026 at Show Grounds Main Arena.">
+  <meta property="og:title" content="Peace and Unity Concert">
+  <meta property="og:description" content="Free entry • 8 August 2026 • 14:00 • Show Grounds Main Arena">
+  <meta property="og:image" content="concert-poster.png">
+  <title>Peace and Unity Concert</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Ephraim Music Promotions presents</p>
+      <h1>Peace &amp; Unity Concert</h1>
+      <p class="subtitle">Zambia — a loving, peaceful nation</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#ticket">Get free ticket</a>
+        <a class="button secondary" href="#details">Event details</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="countdown-section" aria-label="Countdown to the concert">
+      <p class="section-kicker">The celebration begins in</p>
+      <div class="countdown" id="countdown">
+        <div><span id="days">00</span><small>Days</small></div>
+        <div><span id="hours">00</span><small>Hours</small></div>
+        <div><span id="minutes">00</span><small>Minutes</small></div>
+        <div><span id="seconds">00</span><small>Seconds</small></div>
+      </div>
+      <p id="countdown-message" class="countdown-message"></p>
+    </section>
+
+    <section id="ticket" class="ticket-section">
+      <div>
+        <p class="section-kicker">Reserve your place</p>
+        <h2>Download your free digital ticket</h2>
+        <p>Enter a name for the ticket, then save it to your phone. You can show the ticket at the entrance.</p>
+      </div>
+
+      <form id="ticket-form" class="ticket-form">
+        <label for="ticket-name">Name on ticket</label>
+        <input id="ticket-name" name="ticket-name" type="text" maxlength="40" placeholder="Your name" required>
+        <button class="button primary" type="submit">Create my free ticket</button>
+      </form>
+
+      <div id="ticket-result" class="ticket-result" hidden>
+        <canvas id="ticket-canvas" width="1200" height="700" aria-label="Digital concert ticket"></canvas>
+        <div class="ticket-actions">
+          <button class="button primary" id="download-ticket" type="button">Download ticket</button>
+          <button class="button secondary" id="share-ticket" type="button">Share ticket</button>
+        </div>
+        <p class="ticket-note">Keep this image on your phone. Admission remains free.</p>
+      </div>
+    </section>
+
+    <section id="details" class="details-grid">
+      <article class="card"><span class="icon">🎟️</span><h2>Free entry</h2><p>Everyone is welcome.</p></article>
+      <article class="card"><span class="icon">📅</span><h2>8 August 2026</h2><p>Starts at <strong>14:00</strong>.</p></article>
+      <article class="card"><span class="icon">📍</span><h2>Show Grounds Main Arena</h2><p>Lusaka, Zambia</p></article>
+      <article class="card"><span class="icon">🎤</span><h2>Renowned artists</h2><p>Music, worship, peace and unity.</p></article>
+    </section>
+
+    <section class="feature">
+      <div class="feature-copy">
+        <p class="section-kicker">Come, let us worship and dance</p>
+        <h2>Ephraim — Son of Africa</h2>
+        <p>Join families, young people and music lovers from across Zambia for a joyful, faith-filled celebration.</p>
+        <div class="share-row">
+          <a class="button primary" href="https://www.openstreetmap.org/search?query=Show%20Grounds%20Main%20Arena%20Lusaka%20Zambia" target="_blank" rel="noopener">Get directions</a>
+          <button class="button secondary" id="share-button" type="button">Share event</button>
+          <a class="button secondary" id="calendar-link" href="#">Add to calendar</a>
+        </div>
+      </div>
+      <div class="poster-wrap"><img src="concert-poster.png" alt="Peace and Unity Concert poster"></div>
+    </section>
+
+    <section class="sponsor">
+      <p>Powered and sponsored by</p>
+      <h2>Ministry of Youths, Sports and Art</h2>
+    </section>
+  </main>
+
+  <footer><p>Peace and Unity Concert • 8 August 2026 • Show Grounds Main Arena</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
