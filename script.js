@@ -1,9 +1,9 @@
-const eventDate=new Date("2026-08-08T14:00:00+02:00");
+const eventDate=new Date("2026-08-08T16:00:00+02:00");
 function updateCountdown(){const now=new Date();let diff=eventDate-now;const message=document.getElementById("countdown-message");if(diff<=0){document.getElementById("countdown").style.display="none";message.textContent="The Peace and Unity Concert is here!";return}const days=Math.floor(diff/86400000);diff%=86400000;const hours=Math.floor(diff/3600000);diff%=3600000;const minutes=Math.floor(diff/60000);const seconds=Math.floor((diff%60000)/1000);daysEl=document.getElementById("days");daysEl.textContent=String(days).padStart(2,"0");document.getElementById("hours").textContent=String(hours).padStart(2,"0");document.getElementById("minutes").textContent=String(minutes).padStart(2,"0");document.getElementById("seconds").textContent=String(seconds).padStart(2,"0")}
 updateCountdown();setInterval(updateCountdown,1000);
 
 const title="Peace and Unity Concert";
-const eventText="Peace and Unity Concert — free entry, 8 August 2026 at 14:00, Show Grounds Main Arena, Lusaka.";
+const eventText="Peace and Unity Concert — free entry, 8 August 2026 at 16:00, Show Grounds Main Arena, Lusaka.";
 document.getElementById("share-button").addEventListener("click",async()=>{if(navigator.share){try{await navigator.share({title,text:eventText,url:location.href})}catch(_){}}else{window.open("https://wa.me/?text="+encodeURIComponent(eventText+" "+location.href),"_blank","noopener")}});
 const calendarUrl="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(title)+"&dates=20260808T120000Z/20260808T180000Z&details="+encodeURIComponent(eventText)+"&location="+encodeURIComponent("Show Grounds Main Arena, Lusaka, Zambia");
 document.getElementById("calendar-link").href=calendarUrl;
@@ -118,7 +118,7 @@ function drawTicket(name){
     ctx.fillStyle="#fff";
     ctx.font="700 30px Arial";
     ctx.fillText("8 AUGUST 2026",350,1535);
-    ctx.fillText("14:00 HRS",350,1610);
+    ctx.fillText("16:00 HRS",350,1610);
     ctx.fillText("MAIN ARENA, SHOWGROUNDS",350,1685);
 
     // Bottom message.
